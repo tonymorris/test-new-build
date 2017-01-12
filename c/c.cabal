@@ -1,4 +1,4 @@
-name:               b
+name:               c
 version:            0.2.0
 license:            BSD3
 cabal-version:      >= 1.10
@@ -10,13 +10,12 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , c
                    
   hs-source-dirs:
                     src
 
   exposed-modules:
-                    B
+                    C
                     
 test-suite doctests
   type:

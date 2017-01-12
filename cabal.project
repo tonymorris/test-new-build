@@ -1,3 +1,5 @@
 packages: a
 
 optional-packages:  b
+                    c
+
