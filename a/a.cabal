@@ -11,6 +11,7 @@ library
   build-depends:
                     base >= 4.8 && < 5
                     , b
+                    , c
                    
   hs-source-dirs:
                     src
