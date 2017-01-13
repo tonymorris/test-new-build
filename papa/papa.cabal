@@ -10,6 +10,9 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
+                    , papa-base
+                    , papa-base-export
+                    , papa-base-implement
                     , papa-bifunctors
                     , papa-bifunctors-export
                     , papa-bifunctors-implement
@@ -24,7 +27,7 @@ library
                     src
 
   exposed-modules:
-                    A
+                    Papa
                     
 test-suite doctests
   type:

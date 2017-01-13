@@ -1,25 +1,25 @@
-name:               papa-bifunctors
+name:               papa-base-implement
 version:            0.2.0
 license:            BSD3
 license-file:       LICENSE
 author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
 maintainer:         Tony Morris
-copyright:          Copyright (c) 2016, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
-synopsis:           Prelude with only useful functions
+copyright:          Copyright (c) 2017, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
+synopsis:           Useful base functions reimplemented
 category:           Prelude
-description:        Prelude with only useful functions
-homepage:           https://github.com/data61/papa-bifunctors
-bug-reports:        https://github.com/data61/papa-bifunctors/issues
+description:        Useful base functions reimplemented
+homepage:           https://github.com/data61/papa-base-implement
+bug-reports:        https://github.com/data61/papa-base-implement/issues
 cabal-version:      >= 1.10
 build-type:         Custom
 extra-source-files: changelog
 
 source-repository   head
   type:             git
-  location:         git@github.com:data61/papa-bifunctors.git
+  location:         git@github.com:data61/papa-base-implement.git
 
 flag                small_base
-  description:      Choose the new, split-up bifunctors package.
+  description:      Choose the new, split-up base package.
 
 library
   default-language:
@@ -27,8 +27,6 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , papa-bifunctors-export >= 0.2.0
-                    , papa-bifunctors-implement >= 0.2.0
                     
   ghc-options:
                     -Wall
@@ -40,7 +38,15 @@ library
                     src
 
   exposed-modules:
-                    Papa.Bifunctors
+                    Papa.Base.Implement
+                    Papa.Base.Implement.Control.Applicative
+                    Papa.Base.Implement.Control.Monad
+                    Papa.Base.Implement.Data.Bool
+                    Papa.Base.Implement.Data.Foldable
+                    Papa.Base.Implement.Data.Function
+                    Papa.Base.Implement.Data.List
+                    Papa.Base.Implement.Data.Monoid
+                    Papa.Base.Implement.Data.Traversable
                     
 test-suite doctests
   type:

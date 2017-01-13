@@ -1,6 +1,9 @@
 packages: papa
 
-optional-packages:  papa-bifunctors
+optional-packages:  papa-base
+                    papa-base-export
+                    papa-base-implement
+                    papa-bifunctors
                     papa-bifunctors-export
                     papa-bifunctors-implement
                     papa-lens
