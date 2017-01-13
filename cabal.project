@@ -1,5 +1,6 @@
-packages: a
+packages: papa
 
-optional-packages:  b
-                    c
+optional-packages:  papa-bifunctors
+                    papa-bifunctors-export
+                    papa-bifunctors-implement
 

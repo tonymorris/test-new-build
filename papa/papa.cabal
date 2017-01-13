@@ -1,4 +1,4 @@
-name:               a
+name:               papa
 version:            0.2.0
 license:            BSD3
 cabal-version:      >= 1.10
@@ -10,8 +10,9 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , b
-                    , c
+                    , papa-bifunctors
+                    , papa-bifunctors-export
+                    , papa-bifunctors-implement
                    
   hs-source-dirs:
                     src

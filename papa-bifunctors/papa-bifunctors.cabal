@@ -1,4 +1,4 @@
-name:               c
+name:               papa-bifunctors
 version:            0.2.0
 license:            BSD3
 cabal-version:      >= 1.10
@@ -10,12 +10,14 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
+                    , papa-bifunctors-export
+                    , papa-bifunctors-implement
                    
   hs-source-dirs:
                     src
 
   exposed-modules:
-                    C
+                    B
                     
 test-suite doctests
   type:
